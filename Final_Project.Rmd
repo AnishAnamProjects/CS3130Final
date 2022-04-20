@@ -13,3 +13,59 @@ knitr::opts_chunk$set(echo = TRUE)
 data = read.csv("data_sets/pkmn_2016_2017_data.csv")
 
 ```
+
+# The Pokémon Dream Team
+
+Pokémon is a name that many people are familiar with. Since 1996, the Pokémon company, along with Nintendo, have been producing video games, trading cards, television shows, and movies. Additionally, many Pokémon tournaments around the world are held every year. With 905 Pokémon currently along with different variations of some Pokémon, one can be wonder <span style="color:red"> which Pokémon are good and which ones are bad. </span> A task of picking Pokémon and creating a strategy can be daughting for one not to familiar with Pokémon. 
+
+#### How the Game is Played
+
+Pokémon is a turn-based game in which the team of Pokémon that all run out of HP (hitpoints) first loses. Each <span style="color:red"> team consists of six Pokémon.</span>  All the Pokémon are divided into types. Types introduce strengths and weaknesses into a Pokémon match. For example, a water type Pokémon is weak to grass. Additionally, each Pokémon has up to four moves. Each move has a given type along with different attributes about that type. 
+These types are:
+
+- <span style="color:burlywood"> Normal </span> 
+- <span style="color:red"> Fire </span>
+- <span style="color:blue"> Water </span>
+- <span style="color:green"> Grass </span>
+- <span style="color:goldenrod"> Electric </span>
+- <span style="color:aqua"> Ice </span>
+- <span style="color:maroon"> Fighting </span>
+- <span style="color:purple"> Poison (Not confused with Poisson) </span>
+- <span style="color:sienna"> Ground </span>
+- <span style="color:mediumorchild"> Flying </span>
+- <span style="color:magenta"> Psychic </span>
+- <span style="color:olive"> Bug </span>
+- <span style="color:peru"> Rock </span>
+- <span style="color:slategrey"> Ghost </span>
+- <span style="color:black"> Dark </span>
+- <span style="color:deeppink"> Dragon </span>
+- <span style="color:darkgray"> Steel </span>
+- <span style="color:fuchsia"> Fairy </span>
+
+#### How Are Pokémon Trained?
+
+Currently, there are 18 types that a Pokémon can be. In addition to types, moves, and move stats, each Pokémon has different abilities, stats, and natures (which can buff certain stats). In the games, Pokémon can be leveled up after getting a certain amount of Experience Points (Exp for short). EXP is awarded after battle. Additionally, defeating certain Pokémon can give your Pokémon EV points (which is beyond the scope of this report). With all of these factors, the process of choosing the right team can be extremely difficult. 
+
+#### What is the Best Team?
+
+In order to give guidance to build a great team, a collection of winning player records will be given. Data from <span style="color:red"> www.LimitlessVCG.com and from PokiAPI </span> will be presented. With this, one might be able to make more educated decisions on what Pokémon have a on the team. To add evidence to our best team, team win percentages will be calculated and analyzed. This is done in order to show the top teams.
+
+#### We Have Our Team, Now What?
+
+It is commonly said <span style="color:red">  "There is no **I** in **team**." </span> In Pokémon matches, that could not be closer to the truth. Players must carefully select a team with each Pokémon having the proper move set. Moves can attack Pokémon or be defensive. To complicate things, a Pokémon's can increase other stats for a limited number of rounds, skip or add turns, help other Pokémon on the team, and many other options Currently, there are a total of 826 moves. The team can have any combination of Pokémon and moves.
+
+#### All the Combinations!
+
+The numbers previously given, there are many combinations of teams one can make! Just basing of number of Pokémon and team sizes, one have a total of <span style="color:red"> 907^6 combinations of Pokémon teams!</span> Additionally, the combinations of moves for most Pokémon is: <br> 
+<span style="color:green"> $\frac{176!}{(176-4)!*4!}$ </span> 
+<br>
+This totals out to be 38630900 total combinations of a Pokémon and their moves! This just adds to the complexity of the team building task.
+
+# Collecting Data 
+Using data from www.LimitlessVCG.com and PokiAPI will display the best team. In order to generate some of the numbers, a number of assumptions will be addressed. 
+
+#### Independence 
+Are Pokémon teams really chosen at random? Can players be biased in their team pickings? Well, in the games, Pokémon can be caught or traded. This gives each player the ability to generate a team based on their liking. This means that a player may choose their team based off of various trends. These trends includes: new strategies, Pokémon preferences, new Pokémon, and tournament results. From this, can one assume our data is independent?
+
+#### Randomly Selected Tournaments
+The data collected was from the modern season (or the current season). Data is representative of the winners of various tournaments from 2016-2022. The top three players from randomly selected tournaments are chosen and their teams recorded. The time frame and the selection of tournaments are to provide an accurate representation of the <span style="color:red"> top Pokémon and their moveset </span>.
