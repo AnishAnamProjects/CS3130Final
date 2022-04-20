@@ -69,3 +69,14 @@ Are Pokémon teams really chosen at random? Can players be biased in their team 
 
 #### Randomly Selected Tournaments
 The data collected was from the modern season (or the current season). Data is representative of the winners of various tournaments from 2016-2022. The top three players from randomly selected tournaments are chosen and their teams recorded. The time frame and the selection of tournaments are to provide an accurate representation of the <span style="color:red"> top Pokémon and their moveset </span>.
+
+
+
+
+
+
+# Sources 
+- https://limitlessvgc.com/events/
+- https://www.smogon.com/forums/
+- https://pokemon.fandom.com/wiki/Types
+- https://en.wikipedia.org/wiki/Pok%C3%A9mon#Video_games
